@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0" />
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+    <title>Split Bills</title>
+</head>
+
+<body>
+    <main id="main">
+        <section id="calculator" class="shadow">
+            <header>
+                <h5>Bills Settlement</h5>
+            </header>
+            <form id="calculation" class="container">
+                <div class="details">
+                    <div class="grid-container">
+                        <label for="billAmount">Bill Amount</label>
+                        <input name="billAmount" id="billAmount" type="text" placeholder="Enter Amount" minlength="1"
+                            required>
+                    </div>
+                </div>
+                <div class="grid-container">
+                    <label for="peopleAmount">Shared With</label>
+                    <div class="input-box">
+                        <input name="peopleAmount" id="peopleAmount" type="text" minlength="1" required>
+                    </div>
+                </div>
+                </div>
+                <div id="buttons-group">
+                    <button type="submit" id="calculate-btn" class="disable">Split</button>
+                </div>
+            </form>
+        </section>
+    </main>
+</body>
+
+</html>
